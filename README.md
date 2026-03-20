@@ -9,9 +9,9 @@ railway-assistant/
 │── README.md  
 │  
 ├── core/  
-│   ├── speech.py           \# Speech Recognition \+ Translation (Placeholder)  
-│   ├── nlp.py              \# Intent Detection \+ Entity Extraction (Placeholder)  
-│   ├── output.py           \# Final translation \+ Speech synthesis (Placeholder)  
+│   ├── speech.py           \# Speech Recognition \+ Translation 
+│   ├── nlp.py              \# Intent Detection \+ Entity Extraction
+│   ├── output.py           \# Final translation \+ Speech synthesis 
 │   └── train\_service.py    \# Railway data handler (Mocked NTES route)  
 │  
 └── (future folders: models/, config/, docs/)
@@ -52,11 +52,11 @@ python app.py
 
 | Module | Responsibilities | Swappable Later | Status |
 | :---- | :---- | :---- | :---- |
-| **speech.py** | Language detection, STT, translation | ✔ Whisper / Indic model | Placeholder |
-| **nlp.py** | Intent detection \+ entity extraction | ✔ HF transformers / finetuned model | Placeholder |
+| **speech.py** | Language detection, STT, translation | ✔ Whisper / Indic model | Complete |
+| **nlp.py** | Intent detection \+ entity extraction | ✔ HF transformers / finetuned model | Complete |
 | **train\_service.py** | Get train info via API or scraping | ✔ Real NTES API | Mocked |
-| **output.py** | Translation \+ TTS output | ✔ Google TTS / Coqui TTS | Placeholder |
-| **pipeline.py** | Orchestration, error handling, data flow | ❌ Core logic | Functional (Mock Mode) |
+| **output.py** | Translation \+ TTS output | ✔ Google TTS / Coqui TTS | Complete |
+| **pipeline.py** | Orchestration, error handling, data flow | ❌ Core logic | Functional |
 
 ## **Contribution Guidelines**
 
