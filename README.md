@@ -1,4 +1,4 @@
-# **Hear2Help**
+# **VOSK**
 
 ## **Folder Structure**
 
